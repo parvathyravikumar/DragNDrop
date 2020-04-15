@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-------------Title of the page--------->
+<title>Drag and Drop</title>
+<!------Style sheets---------->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="./css/dragStyle.css">
+<!--------Script Files---------->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/dragScript.js"></script>
+</head>
+
+<body>
+<!-----------Start main heading---------> 
+<div class="header">
+  <p>When was the last time that you drank any of the following?</p>
+</div>
+<!-----------End main heading---------> 
+<!-----------Start sub heading---------> 
+<p class="sub-header">Click and drag the text to the appropriate box or alternatively click the statement box below to select your answer.</p>
+<!-----------End sub heading---------> 
+ 
+<!-----------Start main container---------> 
+<div id="content" class="container mainwrap">
+ <!-----------Start draggable divs container---------> 
+ <div id="topSubWrap" class="container topSubwrap">  
+      <div id="reason_1" class="reason">
+        <p class="reasonStyle">Hand pulled beer</p>
+      </div>
+      <div id="reason_2" class="reason">
+        <p class="reasonStyle">Keg or smooth-flow bitter</p>
+      </div>
+      <div id="reason_3" class="reason">
+        <p class="reasonStyle">Draught lager</p>
+      </div>
+      <div id="reason_4" class="reason">
+        <p class="reasonStyle">Bottles of lager</p>
+      </div>
+      <div id="reason_5" class="reason">
+        <p class="reasonStyle">Guinness(or other stout)</p>
+      </div>
+  </div>
+<!-----------End draggable divs container---------> 
+<!-----------Start droppable divs container---------> 
+  <div id="dragContainer" class="container bottomSubwrap">
+     <div id="group_0" class="group group0">
+        <div id="top0" class="option"><img src="./image/tick.png" id="tick0" class="tick" /></div>
+        <p class="rank">Within the last 7 days</p>
+     </div>
+     <div id="group_1" class="group">
+        <div id="top1" class="option"><img src="./image/tick.png" id="tick1" class="tick" /></div>
+        <p class="rank">Within the last 7 days</p>
+     </div>
+     <div id="group_2" class="group">
+        <div id="top2" class="option"><img src="./image/tick.png" id="tick2" class="tick" /></div>
+        <p class="rank">Within the last 4 weeks</p>
+     </div>
+     <div id="group_3" class="group">
+        <div id="top3" class="option"><img src="./image/tick.png" id="tick3" class="tick" /></div>
+        <p class="rank">Within the last 3 months</p>
+     </div>
+     <div id="group_4" class="group">
+        <div id="top4" class="option"><img src="./image/tick.png" id="tick4" class="tick" /></div>
+        <p class="rank">Within the last 12 months</p>
+     </div>
+     <div id="group_5" class="group">
+        <div id="top5" class="option"><img src="./image/tick.png" id="tick5" class="tick" /></div>
+        <p class="rank">Never</p>
+     </div>
+  </div>
+<!-----------End droppable divs container---------> 
+</div>
+<!-----------End main container---------> 
+<!-----------Start reset button---------> 
+<center><button type="button" id="reset" class="btn btn-primary reset">Reset</button></center>
+<!-----------End reset button---------> 
+
+</body>
+</html>
